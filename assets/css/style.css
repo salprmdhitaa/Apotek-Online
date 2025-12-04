@@ -1,0 +1,111 @@
+/* ===========================
+   CUSTOM STYLE - APOTEK SEHAT
+   =========================== */
+
+/* --- Animasi lembut untuk semua elemen interaktif --- */
+button, a, .transition {
+  transition: all 0.25s ease-in-out;
+}
+
+/* --- Kartu Produk --- */
+.product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* --- Tombol --- */
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+}
+
+.btn-blue {
+  background-color: #2563eb; /* Tailwind blue-600 */
+  color: white;
+}
+.btn-blue:hover {
+  background-color: #1d4ed8; /* Tailwind blue-700 */
+}
+
+.btn-green {
+  background-color: #16a34a; /* Tailwind green-600 */
+  color: white;
+}
+.btn-green:hover {
+  background-color: #15803d; /* Tailwind green-700 */
+}
+
+/* --- Animasi hover untuk ikon keranjang --- */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #16a34a;
+  color: white;
+  padding: 0.6rem;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+.icon-btn:hover {
+  background-color: #15803d;
+  transform: scale(1.1);
+}
+
+/* --- Tampilan Gambar Produk --- */
+.product-image {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease;
+}
+.product-image:hover {
+  transform: scale(1.03);
+}
+
+/* --- Section Judul --- */
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+/* --- Detail Produk --- */
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .product-detail {
+    flex-direction: row;
+    align-items: start;
+  }
+}
+
+/* --- Footer kecil --- */
+footer {
+  background-color: #f9fafb;
+  padding: 1.5rem 0;
+  color: #4b5563;
+  font-size: 0.9rem;
+  text-align: center;
+}
+footer a {
+  color: #2563eb;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
